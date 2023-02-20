@@ -1,0 +1,191 @@
+{
+    "jobList": [
+        {    
+            "id": 1,
+            "company": 
+                {
+                    "name": "PAŞA Sığorta",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/5967/pasha-technology.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Front-end developer",
+            "category": "Computing and ICT",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1800",
+            "start_date": "16.02.2023",
+            "end_date": "8.03.2023"
+        },
+        {    
+            "id": 2,
+            "company": 
+                {
+                    "name": "Unibank",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/7220/unibank.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Front-end developer",
+            "category": "Computing and ICT",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "2000",
+            "start_date": "16.02.2023",
+            "end_date": "10.03.2023"
+        },
+        {    
+            "id": 3,
+            "company": 
+                {
+                    "name": "Atəşgah Sığorta",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/2277/atesgah-logo.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Marketinq və ictimaiyyətlə əlaqələr şöbəsinin mütəxəssisi",
+            "category": "Marketing",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1600",
+            "start_date": "16.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 4,
+            "company": 
+                {
+                    "name": "Golden Pay",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/4286/golden-pay.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Front-end developer",
+            "category": "Computing and ICT",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "950",
+            "start_date": "16.02.2023",
+            "end_date": "15.03.2023"
+        },
+        {    
+            "id": 5,
+            "company": 
+                {
+                    "name": "AzerConnect",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/2497/azerconnect-new-logo.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Network Equipment 1st degree specialist",
+            "category": "Computing and ICT",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "2500",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 6,
+            "company": 
+                {
+                    "name": "PASHA Bank",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/5955/pasha-bank-mini.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Hesabatlıq üzrə Mütəxəssis (MİS)",
+            "category": "Financial services",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1000",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        }
+        
+    ]
+}
