@@ -6,27 +6,6 @@ import LoadingIcon from '../../../../assets/img/loading-icon.svg';
 
 
 function List() {
-
-  // const [datas, setData] = useState([]);
-  // const [sortType, setSortType] = useState("default");
-
-  // const sortedData = useMemo(() => {
-  //   let result = datas;
-
-  //   if (sortType === "descending") {
-  //     result = [...datas].sort((a, b) => {
-  //       return b.name.localeCompare(a.name);
-  //     });
-  //   } else if (sortType === "ascending") {
-  //     result = [...datas].sort((a, b) => {
-  //       return a.name.localeCompare(b.name);
-  //     });
-  //   }
-
-  //   return result;
-  // }, [datas, sortType]);
-
-  
   const dispatch = useDispatch();
   const jobs = useSelector(state => state.jobs);
 
