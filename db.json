@@ -28,7 +28,7 @@
             ,
             "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
             "salary": "1800",
-            "start_date": "16.02.2023",
+            "start_date": "28.02.2023",
             "end_date": "8.03.2023"
         },
         {    
@@ -183,6 +183,316 @@
             ,
             "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
             "salary": "1000",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 7,
+            "company": 
+                {
+                    "name": "Bravo",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/2478/bravo.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Sətəm üzrə koordinator",
+            "category": "Engineering",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 8,
+            "company": 
+                {
+                    "name": "Socar Polymer",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/6752/socar-polymer.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Permit to Work Coordinator",
+            "category": "Engineering",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 9,
+            "company": 
+                {
+                    "name": "Kontakt Home",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/5012/kontakt-home.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Satınalma üzrə aparıcı mütəxəssis",
+            "category": "Management",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1120",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 10,
+            "company": 
+                {
+                    "name": "Azersun Holding",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/2519/azersun-new-logo.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "İnsan resursları üzrə kiçik mütəxəssis",
+            "category": "Management",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 11,
+            "company": 
+                {
+                    "name": "Express Bank",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/3918/expressbank.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "İnzibati işlər üzrə mütəxəssis",
+            "category": "Management",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "3000",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 12,
+            "company": 
+                {
+                    "name": "Olivia Beauty & Care",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/37765/olivia.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Kiçik mühasib",
+            "category": "Financial services",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 13,
+            "company": 
+                {
+                    "name": "MKT İstehsalat Kommersiya MMC",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/5471/mkt.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Mühasib-operator",
+            "category": "Financial services",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 14,
+            "company": 
+                {
+                    "name": "International BOKT",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/4694/bokt.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Kredit Mütəxəssisi ",
+            "category": "Financial services",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1470",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 15,
+            "company": 
+                {
+                    "name": "Air Group",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/1981/air-group.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Təyyarə daxili əyləncə sistemləri üzrə media kontent və metadata şöbəsinin mütəxəssisi",
+            "category": "Marketing",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1100",
+            "start_date": "18.02.2023",
+            "end_date": "16.03.2023"
+        },
+        {    
+            "id": 16,
+            "company": 
+                {
+                    "name": "GPS Solutions",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/4309/gps.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Marketinq üzrə direktor",
+            "category": "Marketing",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "1340",
             "start_date": "18.02.2023",
             "end_date": "16.03.2023"
         }

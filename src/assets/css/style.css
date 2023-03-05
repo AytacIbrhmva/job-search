@@ -89,7 +89,8 @@
     background-color: #fff;
     transform-origin: top;
     transition: 0.3s;
-    z-index: 10;
+    position: absolute;
+    z-index: 999;
   }
   .header .container .mobile .mobile-nav ul {
     display: flex;
@@ -333,6 +334,10 @@
        column-gap: 30px;
   justify-content: center;
   row-gap: 30px;
+}
+.job-list .list-container .loading-img {
+  margin-top: 100px;
+  width: 100px;
 }
 
 @media only screen and (max-width: 900px) {

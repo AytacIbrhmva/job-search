@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
     data: [],
+    category: "All",
     loading: false,
     error: "",
 }
@@ -15,7 +16,11 @@ export const fetchJobs = createAsyncThunk('fetchJobs', async () => {
 const jobsSlice = createSlice({
     name: "jobs",
     initialState,
-    reducers: {},
+    reducers: {
+        setCategory: (state, action) => {
+            state.category = action.payload
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchJobs.pending, (state, action) => {
             state.loading = true;
@@ -26,10 +31,11 @@ const jobsSlice = createSlice({
             state.loading = false;
         });
         builder.addCase(fetchJobs.rejected, (state, action) => {
-            state.loading = true;
+            state.loading = false;
             state.error = "Error fetching todos data";
         });
     },
 })
 
 export default jobsSlice.reducer;
+export const {setCategory} = jobsSlice.actions;

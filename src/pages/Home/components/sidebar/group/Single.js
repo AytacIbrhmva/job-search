@@ -3,16 +3,22 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { Typography } from '@mui/material';
 
+import { useDispatch, useSelector } from 'react-redux';
+import { setCategory } from '../../../../../redux/slices/jobsSlice';
 
-// const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 
 export default function Single({category}) {
+
+    const dispatch = useDispatch();
+    const categorySingle = useSelector(state => state.jobs.category);
 
 
     const [checkedValue, setCheckValue] = useState(false);
     const handleChange = (e) => {
         setCheckValue(e.target.checked)
     }
+
 
   return (
     <div className='single'>

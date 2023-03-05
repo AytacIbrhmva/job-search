@@ -1,64 +1,85 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchJobs } from '../../../../redux/features/jobsSlice';
+import { fetchJobs } from '../../../../redux/slices/jobsSlice';
 import Job from './Single';
-
-
-
-
+import LoadingIcon from '../../../../assets/img/loading-icon.svg';
 
 
 function List() {
 
+  // const [datas, setData] = useState([]);
+  // const [sortType, setSortType] = useState("default");
+
+  // const sortedData = useMemo(() => {
+  //   let result = datas;
+
+  //   if (sortType === "descending") {
+  //     result = [...datas].sort((a, b) => {
+  //       return b.name.localeCompare(a.name);
+  //     });
+  //   } else if (sortType === "ascending") {
+  //     result = [...datas].sort((a, b) => {
+  //       return a.name.localeCompare(b.name);
+  //     });
+  //   }
+
+  //   return result;
+  // }, [datas, sortType]);
+
+  
   const dispatch = useDispatch();
   const jobs = useSelector(state => state.jobs);
 
+  const [sortType, setSortType] = useState("newest");
+  const sortedData = useMemo(() => {
+    let result = jobs.data;
+
+    if(sortType === "salary") {
+      result = [...jobs.data].sort((a,b) => {
+        return parseFloat(b.salary) - parseFloat(a.salary);});
+    } else if(sortType === "role") {
+      result = [...jobs.data].sort((a, b) => {
+        return a.role.localeCompare(b.role);
+      });
+    } else if (sortType === "newest") {
+      result = [...jobs.data].sort((a, b) => 
+      Date.parse(new Date(b.start_date.split(".").reverse().join("-"))) - 
+      Date.parse(new Date(a.start_date.split(".").reverse().join("-"))));
+    } else {
+      return jobs.data
+    }      
+    
+    return result;
+  }, [jobs.data, sortType])
+
   useEffect(() => {
     dispatch(fetchJobs())
-
-    // fetch('http://localhost:3010/jobList').then((res) => res.json())
-    // .then((data) => {
-    //     data.sort((a, b) => b.salary - a.salary);
-    //     console.log({data});
-    // });
-  
-    // fetch('http://localhost:3010/jobList').then((res) => res.json())
-    // .then((data) => {
-    //   data.sort((a,b) => a.salary.localeCompare(b.salary));
-    //   console.log({data: data});
-    // });
-
   }, [])
 
 
-  const [sortType, setSortType] = useState();
-  const sortMethods = {
-    newest: {method: (a,b) => a - b},
-    salary: {method: (a, b) => a.salary - a.salary},
-    position_name: {method: (a,b) => a.role - b},
-  };
-
- 
   return (
     <div className='job-list'>
-      {/* <h1>test{sortType}</h1> */}
         <div className="list-header">
-            <h1 className="results">Showing 46 Jobs</h1>
+            <h1 className="results">Showing {jobs.data.length} Jobs</h1>
             <div className="sorting">
               <label htmlFor="">Sort by: </label>        
-              <select onChange={(e) => setSortType(e.target.value)} name="" id="">
+              <select
+              onChange={(e) => setSortType(e.target.value)} 
+              name="" id="">
                   <option value="newest">Newest Post</option>
                   <option value="salary">Salary</option>
-                  <option value="position_name ">Position name A - Z</option>
+                  <option value="role">Position name A - Z</option>
               </select>
             </div>
         </div>
 
         <div className="list-container"> 
-          {jobs.loading && "loading..."}
+         
+
+          {jobs.loading &&  <img className='loading-img' src={LoadingIcon} alt="" />}
           {jobs.error && jobs.error}
           {jobs.data.length > 0 && 
-            jobs.data.map((job) => (
+            sortedData.filter((job) => job.category.includes("")).map((job) => (
                 <Job key={job.id} job={job} />
             ))
           }

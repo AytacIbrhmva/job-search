@@ -89,7 +89,8 @@
                 background-color: #fff;
                 transform-origin: top;
                 transition: .3s;
-                z-index: 10;
+                position: absolute;
+                z-index: 999;
                 .mobile-nav {
                     ul {
                         display: flex;
@@ -155,9 +156,6 @@
                 padding: 10px;
                 font-size: 14px;
                 color: $text-dark;
-                option {
-
-                }
             }
         }
         form {
@@ -359,6 +357,10 @@
         column-gap: 30px;
         justify-content: center;
         row-gap: 30px;
+        .loading-img {
+            margin-top: 100px;
+            width: 100px;
+        }
     }
 }
 

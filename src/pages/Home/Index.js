@@ -1,6 +1,6 @@
-import React from 'react'
-import Searchbar from './components/Searchbar'
-import Sidebar from './components/sidebar/Sidebar'
+import React from 'react';
+import Searchbar from './components/searchBar/Searchbar';
+import Sidebar from './components/sidebar/Sidebar';
 import JobList from './components/jobGroup/List';
 
 function Home() {
