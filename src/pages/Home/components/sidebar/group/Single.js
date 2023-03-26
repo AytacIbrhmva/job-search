@@ -4,27 +4,43 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { Typography } from '@mui/material';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCategory } from '../../../../../redux/slices/jobsSlice';
+import { setCategory, removeCategory } from '../../../../../redux/slices/jobsSlice';
 
 
 
 export default function Single({category}) {
 
     const dispatch = useDispatch();
-    const categorySingle = useSelector(state => state.jobs.category);
-
-
-    const [checkedValue, setCheckValue] = useState(false);
+    const jobs = useSelector(state => state.jobs.data);
+    const categoryState = useSelector(state => state.jobs.category)
+   
+    let amount_job = jobs.filter(job => job.category.toLowerCase().includes(category.toLowerCase())).length
+    // let amount_job = 1 
+    const [categoryValue, setCategoryValue] = useState()
+    const [checkedValue, setCheckedValue] = useState();
     const handleChange = (e) => {
-        setCheckValue(e.target.checked)
+        setCheckedValue(e.target.checked)
     }
 
+
+    useEffect(() => {
+        checkedValue && dispatch(setCategory(category))
+        let index = categoryState.indexOf(category);
+        !checkedValue && dispatch(removeCategory(index))
+    }, [checkedValue])
+
+
+    
 
   return (
     <div className='single'>
         <FormControlLabel 
             control={
-                <Checkbox onChange={(e) => handleChange(e)}  size="small" name='category'
+                <Checkbox 
+                    // checked={checkedValue }
+                    onChange={(e) => handleChange(e)}  
+                    size="small" 
+                    name='category'
                     sx={{ 
                         '& .MuiSvgIcon-root': { 
                             fontSize: 20, 
@@ -35,13 +51,13 @@ export default function Single({category}) {
                 />
             }
             label={
-                <Typography sx={{fontSize: 14, fontWeight: 500, fontFamily: 'unset',fontFamily: 'Poppins'}}>
+                <Typography   sx={{fontSize: 14, fontWeight: 500, fontFamily: 'unset',fontFamily: 'Poppins'}}>
                     {category}
                 </Typography>
             }
         >
         </FormControlLabel>
-        <div className={checkedValue ? "amount active" : "amount" }>56</div>
+        <div className={checkedValue ? "amount active" : "amount" }>{amount_job}</div>
     </div>
   )
 }

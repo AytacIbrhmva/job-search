@@ -244,7 +244,7 @@
                 }
             ,
             "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
-            "salary": "1100",
+            "salary": "5100",
             "start_date": "18.02.2023",
             "end_date": "16.03.2023"
         },
@@ -495,6 +495,37 @@
             "salary": "1340",
             "start_date": "18.02.2023",
             "end_date": "16.03.2023"
+        },
+        {    
+            "id": 17,
+            "company": 
+                {
+                    "name": "Export From Japan",
+                    "location": "Bakı",
+                    "thumb": "https://jobsearch.az/storage/pages/14772/efj.svg",
+                    "tel": "055-666-66-66",
+                    "email": "exmaple@gmail.com"
+                }
+            ,
+            "role": "Senior Web Developer",
+            "category": "Computing and ICT",
+            "job_type": "Full Time",
+            "age": "20 - 35 yaş",
+            "gender": "Fərqi yoxdur",
+            "experience": "1 ildən artıq",
+            "skills": 
+                {
+                    "skill_name": "HTML5",
+                    "skill_name": "CSS3",
+                    "skill_name": "JavaScript",
+                    "skill_name": "React.js",
+                    "skill_name": "Rest API"
+                }
+            ,
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, modi!",
+            "salary": "5000",
+            "start_date": "23.03.2023",
+            "end_date": "04.05.2023"
         }
         
     ]

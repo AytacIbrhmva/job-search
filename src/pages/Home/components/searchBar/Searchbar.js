@@ -1,11 +1,10 @@
-import * as React from 'react';
-
-import { useState } from 'react';
-
-
+import { useState, useEffect } from 'react';
+import {FiSearch, FiFilter} from 'react-icons/fi';
+import {BiMap, BiSearch, BiCategory} from 'react-icons/bi';
+import {MdWorkOutline} from 'react-icons/md';
+import {RiMoneyEuroBoxLine} from 'react-icons/ri';
 
 import { useTheme } from "@mui/material/styles";
-
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -14,10 +13,10 @@ import ListItemText from '@mui/material/ListItemText';
 import Select from '@mui/material/Select';
 import Checkbox from '@mui/material/Checkbox';
 
-import {FiSearch, FiFilter} from 'react-icons/fi';
-import {BiMap, BiSearch, BiCategory} from 'react-icons/bi';
-import {MdWorkOutline} from 'react-icons/md';
-import {RiMoneyEuroBoxLine} from 'react-icons/ri';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { setSearch } from '../../../../redux/slices/jobsSlice';
+
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -52,10 +51,18 @@ function Searchbar() {
       target: { value }
     } = event;
     setCategoriasName(
-      // On autofill we get a stringified value.
       typeof value === "string" ? value.split(",") : value
     );
   };
+
+  const [getSearch, setGetSearch] = useState('')
+  const dispatch = useDispatch();
+  const searchRole = useSelector(state => state.jobs.search)
+  useEffect(() => {
+    dispatch(setSearch(getSearch))
+  }, [getSearch])
+
+
 
   return (
     <div className='searchbar'>
@@ -99,18 +106,17 @@ function Searchbar() {
                     // style={getStyles(name, personName, theme)}
                   >
                       <Checkbox checked={categoriasName.indexOf(name) > -1} />
-                      {/* <ListItemText primary={name} /> */}
+                      <ListItemText primary={name} />
                       <label className='option-text' htmlFor="">{name}</label>
                   </MenuItem>
                 ))}
             </Select>
-
-            
           </div>
+
             <form action="">
               <div className="input-col">
                 <BiSearch className='icon' />
-                <input type="text" placeholder='Job'/>
+                <input onChange={(e) => setGetSearch(e.target.value)} type="text" placeholder='Search'/>
               </div>   
               <button type='submit' className='search-btn'>Find Job</button>
             </form>

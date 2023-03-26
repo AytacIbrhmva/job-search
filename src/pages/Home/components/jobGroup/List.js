@@ -8,6 +8,12 @@ import LoadingIcon from '../../../../assets/img/loading-icon.svg';
 function List() {
   const dispatch = useDispatch();
   const jobs = useSelector(state => state.jobs);
+  const inputValue = useSelector(state => state.jobs.search);
+  const categories = useSelector(state => state.jobs.category);
+  useEffect(() => {
+    dispatch(fetchJobs())
+  }, [])
+  // console.log(categories);
 
   const [sortType, setSortType] = useState("newest");
   const sortedData = useMemo(() => {
@@ -31,15 +37,34 @@ function List() {
     return result;
   }, [jobs.data, sortType])
 
-  useEffect(() => {
-    dispatch(fetchJobs())
-  }, [])
+
+// filter data by category
+  // const filteredDataByCategories = categories.map((category) => (
+  //    sortedData.filter((job) => job.category.includes(category))
+  // ))
+
+  const [resultData, setResultData] = useState(sortedData)
+  
+ 
+    let filteredDataByCategories = categories.length > 0 ?
+    sortedData.filter((job) => {
+      if(categories.indexOf("All") != -1) {
+        return true
+      } else if(categories.indexOf(job.category) == -1) {
+        return false
+      } else {
+        return true
+      }
+   }) :
+   sortedData;
+
+  
 
 
   return (
     <div className='job-list'>
         <div className="list-header">
-            <h1 className="results">Showing {jobs.data.length} Jobs</h1>
+            <h1 className="results">Showing {sortedData.filter(job => job.role.toLowerCase().includes(inputValue.toLowerCase())).length} Jobs</h1>
             <div className="sorting">
               <label htmlFor="">Sort by: </label>        
               <select
@@ -53,21 +78,16 @@ function List() {
         </div>
 
         <div className="list-container"> 
-         
 
           {jobs.loading &&  <img className='loading-img' src={LoadingIcon} alt="" />}
           {jobs.error && jobs.error}
           {jobs.data.length > 0 && 
-            sortedData.filter((job) => job.category.includes("")).map((job) => (
+            filteredDataByCategories.filter(job => job.role.toLowerCase().includes(inputValue.toLowerCase())).map((job) => (
                 <Job key={job.id} job={job} />
             ))
           }
+
         </div>
-            {/* <Job src={'https://jobsearch.az/storage/pages/5967/pasha-technology.svg'} />
-            <Job src={'https://jobsearch.az/storage/pages/7220/unibank.svg'} />
-            <Job src={'https://jobsearch.az/storage/pages/2277/atesgah-logo.svg'} />
-            <Job src={'https://jobsearch.az/storage/pages/4286/golden-pay.svg'} />
-            <Job src={'https://jobsearch.az/storage/pages/2497/azerconnect-new-logo.svg'} /> */}
     </div>
   )
 }

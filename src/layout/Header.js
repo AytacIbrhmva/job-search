@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {IoMdArrowDropdown} from 'react-icons/io';
 import {HiOutlineBarsArrowDown, HiOutlineBarsArrowUp} from 'react-icons/hi2';
 
 export default function Header () {
