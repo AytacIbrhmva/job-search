@@ -16,15 +16,15 @@ export default function Single({category}) {
    
     let amount_job = jobs.filter(job => job.category.toLowerCase().includes(category.toLowerCase())).length
     // let amount_job = 1 
-    const [categoryValue, setCategoryValue] = useState()
     const [checkedValue, setCheckedValue] = useState();
     const handleChange = (e) => {
         setCheckedValue(e.target.checked)
     }
 
-
     useEffect(() => {
         checkedValue && dispatch(setCategory(category))
+
+
         let index = categoryState.indexOf(category);
         !checkedValue && dispatch(removeCategory(index))
     }, [checkedValue])

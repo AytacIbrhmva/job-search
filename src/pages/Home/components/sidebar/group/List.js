@@ -9,10 +9,10 @@ import { setCategory } from '../../../../../redux/slices/jobsSlice';
 
 export default function List() {
 
-  const jobs = useSelector(state => state.jobs.data)
   const jobCategory = useSelector(state => state.jobs.category)
   // console.log(jobCategory);
 
+  const jobs = useSelector(state => state.jobs.data)
   const dispatch = useDispatch()
   useEffect(() =>{
     dispatch(fetchJobs())
